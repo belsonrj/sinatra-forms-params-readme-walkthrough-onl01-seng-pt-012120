@@ -11,6 +11,6 @@ class App < Sinatra::Base
   <form method="POST" action="/food">
 
   post '/food' do
-    params.to_s
+    "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
   end
 end
